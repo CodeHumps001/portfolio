@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroPage";
+import JourneyTimeline from "./components/JourneyTime";
+import ProjectGallery from "./components/ProjectSection";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       {/* Main Core Layout */}
       <main className="relative z-10">
         <HeroSection />
+        <JourneyTimeline />
+        <ProjectGallery />
       </main>
     </div>
   );

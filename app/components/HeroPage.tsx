@@ -8,8 +8,10 @@ import { ArrowUpRight } from "lucide-react";
 export default function HeroSection() {
   const words = [
     "Frontend Developer.",
-    "Problem Solver.",
     "Backend Developer.",
+    "Problem Solver.",
+    "React Native Learner.",
+    "Computer Technology Student.",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -76,21 +78,22 @@ export default function HeroSection() {
             </span>
           </p>
         </div>
-
         <h3 className="text-zinc-400 dark:text-zinc-500 font-mono text-xs uppercase tracking-widest">
-          — My Story
+          Turning ideas into software, one project at a time.
         </h3>
 
         <p className="text-zinc-700 dark:text-zinc-300 text-sm leading-relaxed font-light">
-          I started out on a frustratingly slow laptop, fueled just by curiosity
-          and an urge to figure out how things work. That taught me patience and
-          an appreciation for optimization.
+          My journey started with a slow laptop, YouTube tutorials, and a
+          curiosity about how technology works. What began as simple experiments
+          gradually became a passion for building things that people can
+          actually use.
         </p>
 
         <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed font-light">
-          Today, I use that same focus to write code that clears the path
-          instead of standing in the way. I believe good engineering makes
-          complex tech feel simple, human, and completely natural to use.
+          Today, I spend most of my time learning, designing, and developing
+          applications while balancing school, freelance work, and personal
+          projects. Every project teaches me something new and brings me one
+          step closer to becoming the engineer I aspire to be.
         </p>
 
         <div className="flex items-center gap-6 pt-2">
@@ -98,7 +101,7 @@ export default function HeroSection() {
             href="#projects"
             className="group flex items-center gap-1 text-xs font-mono uppercase tracking-wider text-lime-600 dark:text-lime-300 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
           >
-            <span>Read Case Studies</span>
+            <span>Explore my projects</span>
             <ArrowUpRight
               size={14}
               className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -111,7 +114,7 @@ export default function HeroSection() {
       <div className="w-full max-w-[280px] sm:max-w-[260px] flex justify-center shrink-0 relative py-8">
         <div className="relative aspect-[2/3] w-full group/fan">
           {/* Left Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden  transition-all duration-500 ease-out origin-bottom transform -rotate-30 -translate-x-20 opacity-60 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200/40 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-xl transition-all duration-500 ease-out origin-bottom transform -rotate-12 -translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Left"
@@ -122,7 +125,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden  transition-all duration-500 ease-out origin-bottom transform rotate-30 translate-x-20 opacity-60 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200/40 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-xl transition-all duration-500 ease-out origin-bottom transform rotate-12 translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Right"
@@ -133,7 +136,7 @@ export default function HeroSection() {
           </div>
 
           {/* Core Center Focal Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden  transition-all duration-500 ease-out transform origin-bottom scale-150 group-hover/fan:scale-[1.02]">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-2xl transition-all duration-500 ease-out transform origin-bottom scale-100 group-hover/fan:scale-[1.02]">
             <Image
               src="/my-self.png"
               alt="My Core Portrait"
