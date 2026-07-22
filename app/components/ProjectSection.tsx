@@ -136,7 +136,7 @@ const ProjectCard = ({
           ))}
         </div>
 
-        {/* Footer links (only if not already shown in overlay) */}
+        {/* Footer links */}
         <div className="mt-4 flex items-center justify-between border-t border-zinc-200/50 dark:border-white/5 pt-4">
           <div className="flex items-center gap-3 text-zinc-400 dark:text-zinc-500">
             {hasLive && (
@@ -264,10 +264,9 @@ export default function ProjectGallery() {
   // Separate featured and others for layout
   const featured = projects.find((p) => p.featured)!;
   const others = projects.filter((p) => !p.featured);
-  // Arrange others: first one goes next to featured, remaining three in a row below
   const [firstOther, ...remainingOthers] = others;
 
-  // Animation keyframes (injected once)
+  // Inject animation keyframes once (with cleanup)
   useEffect(() => {
     const style = document.createElement("style");
     style.innerHTML = `
@@ -281,13 +280,15 @@ export default function ProjectGallery() {
       }
     `;
     document.head.appendChild(style);
-    return () => document.head.removeChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
   }, []);
 
   return (
     <section
       id="projects"
-      className="w-11/12 max-w-7xl mx-auto py-24 border-t border-zinc-200/40 dark:border-white/5 transition-colors duration-300"
+      className="w-11/12 max-w-6xl mx-auto py-24 border-t border-zinc-200/40 dark:border-white/5 transition-colors duration-300"
     >
       {/* Header */}
       <div className="space-y-2 mb-12 text-left">
