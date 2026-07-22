@@ -114,7 +114,7 @@ export default function HeroSection() {
       <div className="w-full max-w-[280px] sm:max-w-[260px] flex justify-center shrink-0 relative py-8">
         <div className="relative aspect-[2/3] w-full group/fan">
           {/* Left Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200/40 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-xl transition-all duration-500 ease-out origin-bottom transform -rotate-12 -translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden   transition-all duration-500 ease-out origin-bottom transform -rotate-12 -translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Left"
@@ -125,7 +125,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200/40 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-xl transition-all duration-500 ease-out origin-bottom transform rotate-12 translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden   transition-all duration-500 ease-out origin-bottom transform rotate-12 translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Right"
@@ -136,7 +136,7 @@ export default function HeroSection() {
           </div>
 
           {/* Core Center Focal Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden border border-zinc-200 dark:border-white/5 bg-zinc-100 dark:bg-zinc-900 shadow-2xl transition-all duration-500 ease-out transform origin-bottom scale-100 group-hover/fan:scale-[1.02]">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden  transition-all duration-500 ease-out transform origin-bottom scale-100 group-hover/fan:scale-[1.4]">
             <Image
               src="/my-self.png"
               alt="My Core Portrait"
