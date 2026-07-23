@@ -45,7 +45,7 @@ export default function JourneyTimeline() {
       className="w-11/12 max-w-7xl mx-auto py-24 border-t border-zinc-200/40 dark:border-white/5 transition-colors duration-300"
     >
       {/* Section Headings */}
-      <div className="space-y-2 mb-20 text-left md:text-center max-w-xl mx-auto">
+      <div className="space-y-2 mb-20 text-right md:text-center max-w-xl mx-auto">
         <h3 className="text-zinc-400 dark:text-zinc-500 font-mono text-xs uppercase tracking-widest">
           — My Journey
         </h3>

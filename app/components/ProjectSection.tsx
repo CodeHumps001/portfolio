@@ -213,25 +213,17 @@ export default function ProjectGallery() {
       description:
         "A hospital staff management system focused on attendance monitoring, leave moderation, employee records, and administrative reporting.",
       tags: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
-      image: "/meditrack.png",
+      image: "/med.png",
       liveUrl: "#",
       repoUrl: "#",
     },
-    {
-      title: "MediBook — Hospital Booking System",
-      description:
-        "An appointment and booking platform that allows patients to schedule visits while helping hospitals manage appointments more efficiently.",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MySQL"],
-      image: "/medibook.png",
-      liveUrl: "#",
-      repoUrl: "#",
-    },
+
     {
       title: "Bravo Study",
       description:
         "An educational platform currently under development, focused on improving learning experiences and making study resources more accessible to students.",
       tags: ["Next.js", "Node.js", "TypeScript", "MySQL"],
-      image: "/bravo-study.png",
+      image: "/bravo.png",
       liveUrl: "#",
       repoUrl: "#",
     },
@@ -288,19 +280,20 @@ export default function ProjectGallery() {
   return (
     <section
       id="projects"
-      className="w-11/12 max-w-6xl mx-auto py-24 border-t border-zinc-200/40 dark:border-white/5 transition-colors duration-300"
+      className="w-11/12 max-w-7xl mx-auto py-24 border-t border-zinc-200/40 dark:border-white/5 transition-colors duration-300"
     >
       {/* Header */}
       <div className="space-y-2 mb-12 text-left">
         <h3 className="text-zinc-400 dark:text-zinc-500 font-mono text-xs uppercase tracking-widest">
-          — Case Studies & Builds
+          — Featured Projects
         </h3>
         <h2 className="text-2xl sm:text-3xl font-normal tracking-tight text-zinc-950 dark:text-zinc-50">
-          Selected spaces I've engineered.
+          Software built for real people, solving real problems.
         </h2>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-2xl font-light">
-          Every project is a live, breathing system — from inventory to
-          healthcare, designed to scale and delight.
+          From inventory management and healthcare platforms to booking systems,
+          each project reflects my journey of learning, building, and creating
+          solutions that make everyday work simpler.
         </p>
       </div>
 

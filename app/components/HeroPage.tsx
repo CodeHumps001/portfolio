@@ -7,10 +7,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function HeroSection() {
   const words = [
-    "Frontend Developer.",
-    "Backend Developer.",
+    "Full Stack Developer.",
+    "Software Builder.",
     "Problem Solver.",
-    "React Native Learner.",
+    "Tech Enthusiast.",
     "Computer Technology Student.",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -67,18 +67,18 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="w-11/12 mx-auto min-h-[75vh] py-12 flex flex-col lg:flex-row items-center justify-around gap-16 lg:gap-8">
+    <section className="w-11/12 max-w-7xl mx-auto min-h-[75vh] py-12 flex flex-col lg:flex-row items-center justify-around gap-16 lg:gap-8">
       {/* LEFT COLUMN: The Human Story */}
       <div className="flex-1 space-y-6 text-left w-full lg:max-w-[360px]">
         <div className="h-8 flex items-center">
-          <p className="text-zinc-900 dark:text-zinc-100 font-mono text-sm font-medium">
+          <p className="text-zinc-900 dark:text-zinc-100 font-mono text-7xl font-medium">
             I am a{" "}
             <span className="text-lime-600 dark:text-lime-300 border-r-2 border-lime-600 dark:border-lime-300 pr-1 animate-pulse">
               {mounted ? currentText : "Frontend Developer."}
             </span>
           </p>
         </div>
-        <h3 className="text-zinc-400 dark:text-zinc-500 font-mono text-xs uppercase tracking-widest">
+        {/* <h3 className="text-zinc-900 dark:text-zinc-500 font-bold text-xl uppercase tracking-widest">
           Turning ideas into software, one project at a time.
         </h3>
 
@@ -107,36 +107,36 @@ export default function HeroSection() {
               className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* CENTER COLUMN: Chinese Fan Fan-Out Arrangement */}
       <div className="w-full max-w-[280px] sm:max-w-[260px] flex justify-center shrink-0 relative py-8">
         <div className="relative aspect-[2/3] w-full group/fan">
           {/* Left Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden   transition-all duration-500 ease-out origin-bottom transform -rotate-12 -translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden transition-all duration-500 ease-out origin-bottom transform -rotate-12 -translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:-rotate-[20deg] group-hover/fan:-translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Left"
               fill
               className="object-cover"
-              priority
+              loading="lazy"
             />
           </div>
 
           {/* Right Shadow Fan Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden   transition-all duration-500 ease-out origin-bottom transform rotate-12 translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden transition-all duration-500 ease-out origin-bottom transform rotate-12 translate-x-10 opacity-40 blur-[0.5px] scale-95 group-hover/fan:rotate-[20deg] group-hover/fan:translate-x-16 group-hover/fan:opacity-50">
             <Image
               src="/my-self.png"
               alt="Portrait Fan Right"
               fill
               className="object-cover"
-              priority
+              loading="lazy"
             />
           </div>
 
-          {/* Core Center Focal Image */}
-          <div className="absolute inset-0 rounded-2xl overflow-hidden  transition-all duration-500 ease-out transform origin-bottom scale-100 group-hover/fan:scale-[1.4]">
+          {/* Core Center Focal Image - Adjusted Scale to prevent hiding background layers */}
+          <div className="absolute inset-0 rounded-2xl overflow-hidden transition-all duration-500 ease-out transform origin-bottom scale-100 group-hover/fan:scale-[1.05]">
             <Image
               src="/my-self.png"
               alt="My Core Portrait"
@@ -151,13 +151,13 @@ export default function HeroSection() {
       {/* RIGHT COLUMN: Grid of Local Image Icons */}
       <div className="flex-1 space-y-6 text-left w-full lg:max-w-[380px]">
         <h3 className="text-zinc-400 dark:text-zinc-500 font-mono text-xs uppercase tracking-widest">
-          — Craft & Stack
+          — Tools & Technologies
         </h3>
 
         <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed font-light">
-          Tools are just extension cords for ideas. These are the frameworks and
-          technologies I lean on daily to bring digital experiences to life
-          cleanly:
+          Every great product starts with the right foundation. These are the
+          technologies I use to design, build, and deliver modern web and mobile
+          applications.
         </p>
 
         {/* Local Grid Layout for Stack Images */}

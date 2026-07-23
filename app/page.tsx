@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroPage";
 import JourneyTimeline from "./components/JourneyTime";
 import ProjectGallery from "./components/ProjectSection";
+import SkillsGrid from "./components/SkillsPage";
+import ContactAndFooter from "./components/FooterContact";
 
 export default function Home() {
   return (
@@ -13,8 +15,10 @@ export default function Home() {
       {/* Main Core Layout */}
       <main className="relative z-10">
         <HeroSection />
+        <SkillsGrid />
         <JourneyTimeline />
         <ProjectGallery />
+        <ContactAndFooter />
       </main>
     </div>
   );
