@@ -69,9 +69,9 @@ export default function HeroSection() {
   return (
     <section className="w-11/12 max-w-7xl mx-auto min-h-[75vh] py-12 flex flex-col lg:flex-row items-center justify-around gap-16 lg:gap-8">
       {/* LEFT COLUMN: The Human Story */}
-      <div className="flex-1 space-y-6 text-left w-full lg:max-w-[360px]">
+      <div className="flex-1 space-y-6 text-left w-full lg:max-w-[360px] mt-18">
         <div className="h-8 flex items-center">
-          <p className="text-zinc-900 dark:text-zinc-100 font-mono text-7xl font-medium">
+          <p className="text-zinc-900 dark:text-zinc-100 font-bold text-5xl font-medium">
             I am a{" "}
             <span className="text-lime-600 dark:text-lime-300 border-r-2 border-lime-600 dark:border-lime-300 pr-1 animate-pulse">
               {mounted ? currentText : "Frontend Developer."}
